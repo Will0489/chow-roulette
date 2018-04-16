@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var spinBtn = document.getElementById('spin');
     var resetBtn = document.getElementById('reset');
     var resultField = document.getElementById('result');
+    var canvas = document.getElementById('canvas');
+    var radius = 212;
 
     var segments = [
         {'fillStyle': '#fff', 'text': 'Rice'},
@@ -13,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var wheel = new Winwheel({
         'numSegments': segments.length,
-        'outerRadius': 212,
+        'outerRadius': radius,
         'textFontSize': 28,
         'segments': segments,
         'animation': {

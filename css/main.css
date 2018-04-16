@@ -7,6 +7,11 @@ header h1 {
     margin: 0 auto;
 }
 
+#canvas {
+    width: 434px;
+    height: 434px;
+}
+
 #indicator {
     text-align: center;
     max-width: 434px;
