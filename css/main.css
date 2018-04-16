@@ -1,0 +1,23 @@
+header h1 {
+    text-align: center;
+}
+
+.container {
+    width: 434px;
+    margin: 0 auto;
+}
+
+#indicator {
+    text-align: center;
+    max-width: 434px;
+}
+
+#buttons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#result {
+    max-width: 434px;
+    text-align: center;
+}

@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var spinBtn = document.getElementById('spin');
     var resetBtn = document.getElementById('reset');
-
-    console.log('Hello');
+    var resultField = document.getElementById('result');
 
     var segments = [
         {'fillStyle': '#fff', 'text': 'Rice'},
@@ -28,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var wheelPower = 0;
     var wheelSpinning = false;
 
-    function showPrize() {
-        console.log('Winner, winner chicken dinner. Or not.');
+    function showPrize(winner) {
+        resultField.innerHTML = winner.text;
     }
 
     function initListeners() {
@@ -47,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             wheel.draw();
 
             wheelSpinning = false;
+            resultField.innerHTML = '';
         })
     }
 
